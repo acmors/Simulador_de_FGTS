@@ -25,7 +25,7 @@ Este é um sistema simples para gerenciamento de contas FGTS, onde é possível 
 bash
 Copiar
 Editar
-git clone https://github.com/acmors/finance-flow.git
+git clone [https://github.com/acmors/finance-flow.git](https://github.com/acmors/Simulador_de_FGTS)
 Compile e execute o projeto no seu ambiente de desenvolvimento Java.
 
 <strong>Interface</strong>:
