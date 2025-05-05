@@ -8,20 +8,24 @@ public class Movimentacao {
     private String tipo;
     private double valor;
     private LocalDate data;
-    private String descricao;
     private ContaFGTS contaFGTS;
 
-    public Movimentacao() {
+    public Movimentacao(ContaFGTS contaFGTS, LocalDate data, String tipo, double valor) {
+        this.contaFGTS = contaFGTS;
+        this.data = data;
+        this.tipo = tipo;
+        this.valor = valor;
     }
 
-    public Movimentacao(int id, String tipo, LocalDate data, double valor, String descricao, ContaFGTS contaFGTS) {
+
+    public Movimentacao(int id, String tipo, LocalDate data, double valor, ContaFGTS contaFGTS) {
         this.id = id;
         this.tipo = tipo;
         this.data = data;
         this.valor = valor;
-        this.descricao = descricao;
         this.contaFGTS = contaFGTS;
     }
+
 
     public LocalDate getData() {
         return data;
@@ -37,14 +41,6 @@ public class Movimentacao {
 
     public void setContaFGTS(ContaFGTS contaFGTS) {
         this.contaFGTS = contaFGTS;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
     }
 
     public double getValor() {

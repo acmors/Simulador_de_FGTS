@@ -5,15 +5,17 @@ public class Usuario {
     private String nome;
     private String cpf;
     private String senha;
+    private ContaFGTS contaFGTS;
 
-    public Usuario(int id, String nome, String cpf, String senha) {
+    public Usuario(int id, String nome, String cpf, ContaFGTS contaFGTS, String senha) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
         this.senha = senha;
+        this.contaFGTS = contaFGTS;
     }
 
-    public Usuario(){}
+    public Usuario() {}
 
     public int getId() {
         return id;
@@ -45,5 +47,13 @@ public class Usuario {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public ContaFGTS getContaFGTS() {
+        return contaFGTS;
+    }
+
+    public void setContaFGTS(ContaFGTS contaFGTS) {
+        this.contaFGTS = contaFGTS;
     }
 }
