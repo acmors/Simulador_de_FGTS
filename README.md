@@ -39,10 +39,8 @@ Informe o CPF e a senha cadastrados para acessar as funcionalidades de visualiza
 
 <strong>Senha</strong>: senha456
 
-Estrutura do Projeto
-bash
-Copiar
-Editar
+<h2>Estrutura do Projeto</h2>
+<pre>
 src/
 │
 ├── database/           # Contém a simulação de banco de dados e cálculo de saldo
@@ -64,5 +62,7 @@ src/
 │       └── LoginFrame.java
 │
 └── Main.java           # Classe principal para iniciar o sistema
+</pre>
+
 <h1>Contribuindo</h1>
 Se você quiser contribuir com melhorias para o projeto, fique à vontade para fazer um fork, realizar as alterações e enviar um pull request.
